@@ -10,7 +10,6 @@ body {
   color: #fff;
   text-align: center;
   padding: 20px;
-  
 }
 
 h1 {
@@ -20,10 +19,8 @@ h1 {
 
 .circle-wrapper {
   position: relative;
-  width: 90vw;
-  max-width: 600px;
-  height: 90vw;
-  max-height: 600px;
+  width: 600px;
+  height: 600px;
   margin: auto;
 }
 
