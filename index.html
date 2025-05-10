@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مؤقت البومودورو</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>مؤقت البومودورو</h1>
+
+  <div class="circle-wrapper">
+    <svg viewBox="0 0 100 100">
+      <circle class="track" cx="50" cy="50" r="45" />
+      <circle id="progress" class="progress" cx="50" cy="50" r="45" />
+    </svg>
+    <div class="time-display" id="timer">30:00</div>
+  </div>
+
+  <div id="status">جارٍ بدء الجلسة...</div>
+
+  <div class="info">
+    <p>عدد الفترات: <span id="sessions">0</span></p>
+    <p>الوقت الإجمالي: <span id="total">0 دقيقة</span></p>
+  </div>
+
+  <button onclick="toggleTimer()">إيقاف / تشغيل</button>
+
+  <div class="log-section">
+    <h2>سجل الجلسات</h2>
+    <ul id="log"></ul>
+    <button onclick="clearLog()" class="clear">مسح السجل</button>
+  </div>
+
+  <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

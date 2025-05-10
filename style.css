@@ -1,0 +1,105 @@
+body {
+  font-family: Tahoma, sans-serif;
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.track {
+  fill: none;
+  stroke: #444;
+  stroke-width: 8;
+}
+
+.progress {
+  fill: none;
+  stroke: #00bcd4;
+  stroke-width: 8;
+  stroke-dasharray: 282.6;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.time-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+#status {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.info {
+  margin: 10px 0 30px;
+}
+
+button {
+  background: #00bcd4;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0191a5;
+}
+
+.log-section {
+  margin-top: 40px;
+  max-width: 400px;
+  margin-inline: auto;
+  text-align: right;
+}
+
+.log-section h2 {
+  border-bottom: 1px solid #444;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+#log {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.clear {
+  background: none;
+  color: #f55;
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-decoration: underline;
+}
